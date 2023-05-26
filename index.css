@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Open+Sans:ital,wght@0,400;1,300&family=Outfit&family=Poppins:wght@500&family=Roboto:ital,wght@1,100&family=Urbanist:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@1,700&family=Montserrat:wght@500;700&family=Open+Sans:ital,wght@0,400;1,300&family=Outfit&family=Poppins:wght@500&family=Roboto:ital,wght@1,100&family=Urbanist:wght@100&display=swap");
+
+:root {
+  --dark-cyan: hsl(158, 36%, 37%);
+  --cream: hsl(30, 38%, 92%);
+  --very-dark-blue: hsl(212, 21%, 14%);
+  --dark-grayish-blue: hsl(228, 12%, 48%);
+  --white: hsl(0, 0%, 100%);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Montserrat, sans-serif;
+}
+body {
+  font-size: 14px;
+  background-color: var(--cream);
+  /* text-align: center; */
+  margin: 20px;
+}
+
+.container {
+  border: 0px solid var(--cream);
+  border-radius: 44rem;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  margin-top: 10rem;
+  height: 32rem;
+}
+img {
+  width: 330px;
+  border-radius: 10px 0px 0px 10px
+}
+.text {
+  background-color: var(--white);
+  width: 330px;
+  border: 1px solid white;
+  border-radius: 0px 10px 10px 0px;
+  padding-left: 2rem;
+  padding-right: 0.6rem;
+}
+p {
+  padding: 15px;
+  font-size: 16px;
+  color: var(--dark-grayish-blue);
+  line-height: 1.4;
+}
+.title {
+  letter-spacing: 5px;
+  margin-right: 8rem;
+}
+
+h1 {
+  padding: 5px;
+  color: var(--very-dark-blue);
+  font-family: Fraunces;
+  font-size: 38px;
+  /* margin-right: 5rem; */
+}
+.price {
+  color: var(--dark-cyan);
+  margin-left: 1rem;
+}
+.btn {
+  background-color: var(--dark-cyan);
+  border: 1px solid;
+  border-radius: 10px;
+  padding: 13px;
+  margin: 20px;
+  width: 15rem;
+  font-size: 15px;
+  color: var(--white);
+  font-family: "Montserrat", sans-serif;
+  cursor: pointer;
+  font-weight: bold;
+}
+.icon {
+  width: 15px;
+  margin-right: 8px;
+}
+.price-text {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding-right: 5rem;
+  /* font-style: italic; */
+}
+.p-price {
+  text-decoration: line-through;
+}
+.attribution {
+  text-align: center;
+  margin-top: 20px;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Product preview card component</title>
+    <link rel="stylesheet" href="index.css" />
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  </head>
+  <body>
+    <div class="container">
+     
+      <img 
+         
+          src="images/image-product-desktop.jpg"
+          alt="Product desktop"
+          
+        />
+     
+     <div class="text">
+        <p class="title">PERFUME</p>
+        <h1>Gabrielle Essence Eau De Parfum</h1>
+        <p>
+          A floral, solar and voluptuous interpretation composed by Olivier
+          Polge, Perfumer-Creator for the House of CHANEL.
+        </p>
+       <div class="price-text">
+       <h1 class="price">$149.99</h1> 
+        <p class="p-price">$169.99</p>
+      </div>
+ <button class="btn"><img class="icon"src="/images/icon-cart.svg">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Sumeya Haji</a>.
+    </div>
+  </body>
+</html>
